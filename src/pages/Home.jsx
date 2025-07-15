@@ -39,8 +39,8 @@ const Home = () => {
 
 		try {
 			const response = await axios.post('https://server.laravel.bpc-bsis4d.com/public/api/login', {
-				login: "asdAD@asdsad",
-				password,
+				login: login,
+				password: password,
 			}, {
 				headers: {
 					'Accept': 'application/json',
@@ -142,7 +142,7 @@ const Home = () => {
 						onClick={() => window.location.href = 'https://your-backend.com/auth/google'} // Replace with actual route
 						className="hover:cursor-pointer w-full max-w-md flex items-center justify-center gap-3 rounded-lg border border-gray-300 bg-white px-5 py-3 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50"
 					>
-						<img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" className="h-5 w-5" />
+						<img src="/google.png" alt="Google" className="h-5 w-5" />
 						<span>Continue with Google</span>
 					</button>
 
@@ -150,7 +150,7 @@ const Home = () => {
 						onClick={() => window.location.href = 'https://your-backend.com/auth/microsoft'} // Replace with actual route
 						className="hover:cursor-pointer w-full max-w-md flex items-center justify-center gap-3 rounded-lg border border-gray-300 bg-white px-5 py-3 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50"
 					>
-						<img src="https://www.svgrepo.com/show/303206/microsoft.svg" alt="Microsoft" className="h-5 w-5" />
+						<img src="/microsoft.png" alt="Microsoft" className="ml-4 h-5 w-5" />
 						<span>Continue with Microsoft</span>
 					</button>
 				</div>
